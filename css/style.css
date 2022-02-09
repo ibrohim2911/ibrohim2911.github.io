@@ -26,6 +26,10 @@ h1 {
 header{height: 766px;width: 100%;
   background-image: url('../imges/christopher-gower-291246-unsplash-e1538906745377.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+  
 }
 .center {
   text-align: center;
@@ -239,7 +243,7 @@ header{height: 766px;width: 100%;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 1);
   filter: grayscale(100%);
   transition: all 0.4s ease-in-out;
@@ -254,8 +258,11 @@ header{height: 766px;width: 100%;
 .cardcontainer h5 {
   color: rgb(0, 0, 0);
   font-size: 35px;
+  margin-bottom: 15px;
 }
-
+.cardcontainer p{
+  margin-bottom: 15px;
+}
 .bottomline {
   width: 100%;
   height: auto;
@@ -318,9 +325,10 @@ h2{text-align: center;
 .technologies{margin-top: 20px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .frontend,
-.backend{
+.backend{margin-top: 10px;
   height: 300px;
   width: 400px;
   background: #fff;
@@ -386,4 +394,10 @@ h5{
   height: 8px;
   border-radius: 5px;
   background: rgb(165, 12, 12);
+}
+@media (max-width:450px) {
+  .frontend,
+  .backend{
+    width: 300px;
+  }
 }
